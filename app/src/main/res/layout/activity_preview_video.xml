@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.laodev.tictic.Video_Recording.Preview_Video_A">
+
+
+<com.laodev.tictic.Video_Recording.MovieWrapperView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_movie_wrapper"/>
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:padding="3dp"
+        android:id="@+id/Goback"
+        android:src="@drawable/ic_back"
+        android:background="@color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/next_btn"
+        android:layout_above="@+id/recylerview"
+        android:textColor="@color/white"
+        android:background="@color/redcolor"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recylerview"
+        android:paddingBottom="20dp"
+        android:background="@color/fifty_transparent_black"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

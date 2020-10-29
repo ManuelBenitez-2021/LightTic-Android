@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainMenuFragment"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.laodev.tictic.Main_Menu.MainMenuActivity">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+        <com.laodev.tictic.Main_Menu.Custom_ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+       <com.google.android.material.tabs.TabLayout
+           android:id="@+id/tabs"
+           android:layout_width="match_parent"
+           android:layout_height="?actionBarSize"
+           app:tabMode="fixed"
+           app:tabSelectedTextColor="@color/black"
+           android:gravity="center"
+           app:tabGravity="fill"
+           app:tabPaddingStart="0dp"
+           app:tabPaddingEnd="0dp"
+           android:elevation="5dp"
+           app:tabTextColor="@color/dimgray"
+           app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
+           android:background="@drawable/d_top_white_line"
+           app:tabIndicatorColor="@color/transparent"
+           android:layout_alignParentBottom="true"/>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="?actionBarSize"
+           android:scaleType="fitXY"
+           android:src="@drawable/black_gradient"
+           android:layout_alignParentBottom="true"/>
+   </RelativeLayout>
+</FrameLayout>

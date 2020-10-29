@@ -1,0 +1,11 @@
+go to every java file and search "Something wrong with Api" text
+
+if you file the line
+
+Toast.makeText(context, "Something wrong with Api", Toast.LENGTH_SHORT).show();
+
+then remove that line.
+
+
+com.dinosoftlabs.tictic.SimpleClasses >> ApiRequest.java
+manifest.xml file.

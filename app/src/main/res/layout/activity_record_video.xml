@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.laodev.tictic.Record_Video_A">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:id="@+id/texture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:orientation="vertical"
+             android:layout_alignParentTop="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="5dp">
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/video_progress"
+                app:rcProgress="0"
+                app:rcMax="33"
+                app:rcRadius="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/timer_txt"
+                app:rcProgressColor="@color/colorPrimary"
+                app:rcSecondaryProgressColor="@color/transparent"
+                app:rcBackgroundColor="@color/fifty_transparent_black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="0 S"
+                android:textSize="13dp"
+                android:id="@+id/timer_txt"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/Goback"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_white_cross"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/add_sound_layout"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Sound"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/camera_options"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/rotate_camera"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_rotate_cam"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/record_image"
+                android:src="@drawable/ic_recoding_no"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/done"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_not_done"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

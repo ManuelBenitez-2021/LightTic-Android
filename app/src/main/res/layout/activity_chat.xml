@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:id="@+id/Chat_F"
+    android:fitsSystemWindows="true"
+    android:paddingTop="24dp"
+    tools:context="com.laodev.tictic.Chat.Chat_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="1"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/d_bottom_gray_line">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:id="@+id/Goback"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:scaleType="fitStart"
+                android:tint="@color/redcolor"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_toRightOf="@+id/Goback"
+                android:id="@+id/profileimage"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/image_placeholder"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:id="@+id/username"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profileimage"
+                android:textColor="@color/black"/>
+
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_not_send_message"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:id="@+id/alert_btn"
+                android:background="@color/transparent"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat_layout"
+    android:visibility="visible"
+    android:layout_below="@id/toolbar">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chatlist"
+        android:layout_above="@+id/typeindicator">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/typeindicator"
+          android:orientation="horizontal"
+          android:layout_marginLeft="10dp"
+          android:visibility="gone"
+          android:layout_above="@+id/writechatlayout">
+
+          <ImageView
+              android:layout_width="55dp"
+              android:layout_height="50dp"
+              android:visibility="visible"
+              android:background="@drawable/ic_type_indicator"/>
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:id="@+id/gif_layout"
+          android:orientation="horizontal"
+          android:visibility="gone"
+          android:gravity="center"
+          android:background="@color/white"
+          android:layout_above="@+id/writechatlayout">
+
+          <com.chauthai.overscroll.RecyclerViewBouncy
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:id="@+id/gif_recylerview"/>
+
+      </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/writechatlayout"
+        android:background="@drawable/editfield_releative_border"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:id="@+id/uploadimagebtn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter"
+            android:padding="4dp"
+            android:src="@drawable/ic_image_icon"
+            android:background="@color/transparent"/>
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mic_btn"
+            android:scaleType="fitCenter"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_mic_fill"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingBottom="3dp"
+            android:layout_toRightOf="@+id/uploadimagebtn"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"/>
+
+
+        <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/mic_btn"
+           android:background="@drawable/top_bottom_border_line"
+           android:layout_toLeftOf="@+id/sendbtn">
+
+          <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgedittext"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/upload_gif_btn"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Send Message Here..."/>
+            <ImageButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/upload_gif_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_gif_image_gray"
+                android:background="@color/transparent"/>
+       </RelativeLayout>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/sendbtn"
+            android:layout_alignParentRight="true"
+            android:text="Send"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_send"
+            android:background="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/progress_bar"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

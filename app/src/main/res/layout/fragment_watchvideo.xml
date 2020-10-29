@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/WatchVideo_F"
+    android:clickable="true"
+    tools:context="com.laodev.tictic.Home.Home_F">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recylerview"
+        android:background="@color/black"/>
+
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/Goback"
+            android:scaleType="fitCenter"
+            android:background="@color/transparent"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back"/>
+
+        <ProgressBar
+            android:id="@+id/p_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="43dp"
+            android:indeterminateOnly="true"
+            android:visibility="visible"
+            android:indeterminateTint="@color/white"
+            android:secondaryProgress="@android:integer/config_shortAnimTime"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:id="@+id/write_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/black_gradient"
+                android:layout_alignParentBottom="true"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Leave a comment..."
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/message_edit"
+                android:textColorHint="@color/colorwhite_50"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/send_btn_layout"
+                android:backgroundTint="@color/transparent"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_btn_layout"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/send_btn"
+                    android:padding="5dp"
+                    android:rotation="-45"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/white"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_send"/>
+
+                <ProgressBar
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:theme="@style/white_progressbar"
+                    android:id="@+id/send_progress"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

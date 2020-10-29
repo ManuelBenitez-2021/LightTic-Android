@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/darkgray"
+        android:visibility="gone"
+        android:id="@+id/datetxt"/>
+
+    <com.laodev.tictic.Chat.RoundCornersImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/chatimage"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/datetxt"
+        android:src="@drawable/image_placeholder"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chatimage"
+        android:textSize="10dp"
+        android:id="@+id/message_seen"
+        android:textColor="@color/darkgray"
+        android:layout_marginLeft="15dp"/>
+</RelativeLayout>

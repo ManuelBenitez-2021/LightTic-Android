@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1045046038635",
+    "firebase_url": "https://light-tiktok.firebaseio.com",
+    "project_id": "light-tiktok",
+    "storage_bucket": "light-tiktok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045046038635:android:eac73b292e46afee71e12e",
+        "android_client_info": {
+          "package_name": "com.laodev.tictic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045046038635-j0jakmspapn8gjb9fcfonea16477lsgu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.tictic",
+            "certificate_hash": "866476e8c3322142e8206dd57e36c1deb9726b56"
+          }
+        },
+        {
+          "client_id": "1045046038635-ve5bte60csk8iao4arvce9vgtjahrr0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.tictic",
+            "certificate_hash": "216469bff82669153a20b974377e9723048924a6"
+          }
+        },
+        {
+          "client_id": "1045046038635-tafvbdqnbt68rpbpmpm1810uq9a2knpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASpJ1ps8J3KAQbCtHFif-0JdKtP5YO_f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045046038635-tafvbdqnbt68rpbpmpm1810uq9a2knpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

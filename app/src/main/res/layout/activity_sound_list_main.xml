@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.laodev.tictic.SoundLists.SoundList_Main_A">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_white_cross"
+                    android:id="@+id/Goback"
+                    android:tint="@color/black"
+                    android:scaleType="fitStart"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/transparent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Sound"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/groups_tab"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:tabMode="fixed"
+                app:tabTextColor="@color/dark_gray"
+                app:tabSelectedTextColor="@color/black"
+                app:tabGravity="fill"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingEnd="0dp"
+                android:background="@drawable/d_bottom_gray_line"
+                app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_marginLeft="-1dp"
+                app:tabIndicatorColor="@color/black"/>
+
+            <com.laodev.tictic.Main_Menu.Custom_ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_below="@+id/groups_tab">
+            </com.laodev.tictic.Main_Menu.Custom_ViewPager>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

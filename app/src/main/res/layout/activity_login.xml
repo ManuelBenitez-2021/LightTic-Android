@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.laodev.tictic.Accounts.Login_A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top_view"
+        android:visibility="gone"
+        android:background="@color/black"
+        android:alpha="0.4"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/d_top_left_right_radius"
+        android:id="@+id/login_details_RL1_id">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/Goback"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_white_cross"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_title_txt"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/login_details_RL3_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="14dp">
+
+            <HorizontalScrollView
+                android:id="@+id/login_details_scrollview_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/facebook_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_facebook" />
+
+                    <ImageView
+                        android:id="@+id/google_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/facebook_btn"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_goggle" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_terms_condition_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/dimgray"
+            android:layout_below="@+id/login_details_RL3_id"
+            android:text="By signing up, you confirm that you agree to our \n Terms of Use and have read and understood \n our Privacy Policy."
+            android:gravity="center" />
+    </RelativeLayout>
+</RelativeLayout>

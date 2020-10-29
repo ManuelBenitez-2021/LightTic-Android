@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/not_send_messsage"
+        android:visibility="gone"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_not_send_message"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/not_send_messsage">
+
+        <ProgressBar
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:visibility="gone"
+            android:id="@+id/p_bar"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/chatimage"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/darkgray"
+            android:visibility="gone"
+            android:id="@+id/datetxt"/>
+
+       <com.makeramen.roundedimageview.RoundedImageView
+         android:layout_width="200dp"
+         android:layout_height="200dp"
+         android:id="@+id/chatimage"
+         app:riv_corner_radius="15dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="10dp"
+         android:layout_below="@+id/datetxt"
+         android:src="@drawable/image_placeholder"
+         android:scaleType="centerCrop"
+        />
+
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chatimage"
+        android:textSize="10dp"
+        android:id="@+id/message_seen"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/darkgray"
+        android:layout_marginRight="15dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
