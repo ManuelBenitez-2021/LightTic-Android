@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.danylovolokh:hashtag-helper:1.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab73fcbebf1f1c80fdab57d14c7e76b7/jetified-hashtag-helper-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab73fcbebf1f1c80fdab57d14c7e76b7/jetified-hashtag-helper-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab73fcbebf1f1c80fdab57d14c7e76b7/jetified-hashtag-helper-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.danylovolokh/hashtag-helper/1.1.0/a829e13d3a604ecc986f80ec59b354afe3703926/hashtag-helper-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.danylovolokh/hashtag-helper/1.1.0/4dca9a053f3017c812efe14d2312018e291ee43/hashtag-helper-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: net.the4thdimension:audio-wife:1.0.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6e28997c77dbe37a378f04cdee438d35/jetified-audio-wife-1.0.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6e28997c77dbe37a378f04cdee438d35/jetified-audio-wife-1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6e28997c77dbe37a378f04cdee438d35/jetified-audio-wife-1.0.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.the4thdimension/audio-wife/1.0.3/5b9414fc7ea6f2fa5c70d17fdf0a58ecdb629346/audio-wife-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.the4thdimension/audio-wife/1.0.3/648be6901a5506686c59c8485c2b56857ebbf7eb/audio-wife-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

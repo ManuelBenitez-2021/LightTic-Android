@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:exoplayer-dash:2.8.3@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1523c28b7c24bb9a8c22d09750ebd34a/jetified-exoplayer-dash-2.8.3/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1523c28b7c24bb9a8c22d09750ebd34a/jetified-exoplayer-dash-2.8.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1523c28b7c24bb9a8c22d09750ebd34a/jetified-exoplayer-dash-2.8.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1523c28b7c24bb9a8c22d09750ebd34a/jetified-exoplayer-dash-2.8.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-dash/2.8.3/39fe1ec932a4f6b772090c4809acc94f5bb678fb/exoplayer-dash-2.8.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-dash/2.8.3/d542f4303991f480a24fbdf00ac9f72bde96b344/exoplayer-dash-2.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
