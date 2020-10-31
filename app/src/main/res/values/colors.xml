@@ -25,10 +25,10 @@
     <color name="fifty_transparent_black">#802F2F2F</color>
 
     <color name="redcolor">#ff0008</color>
+    <color name="pinkcolor">#9700b2</color>
 
     <color name="app_color">#c52127</color>
-
-
+    <color name="colorBottomBack">#30000000</color>
 
 
 </resources>

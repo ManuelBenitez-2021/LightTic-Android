@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LightTic</string>
+    <string name="app_name">Light Tic</string>
 
     <string name="facebook_app_id">1250979975276068</string>
     <string name="fb_login_protocol_scheme">fb(1250979975276068)</string>
@@ -10,4 +10,8 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="server_client_id">1045046038635-lg22e851v0bqgdphbah8om4s9d79hig2.apps.googleusercontent.com</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_profile">Profile</string>
 </resources>

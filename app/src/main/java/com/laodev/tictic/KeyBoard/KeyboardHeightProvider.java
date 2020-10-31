@@ -43,13 +43,13 @@ public class KeyboardHeightProvider extends PopupWindow {
     /** The parent view */
     private View parentView;
 
-    /** The root activity_main that uses this KeyboardHeightProvider */
+    /** The root activity_light_main that uses this KeyboardHeightProvider */
     private Activity activity;
 
     /**
      * Construct a new KeyboardHeightProvider
      *
-     * @param activity The parent activity_main
+     * @param activity The parent activity_light_main
      */
     public KeyboardHeightProvider(Activity activity) {
         super(activity);
@@ -123,7 +123,7 @@ public class KeyboardHeightProvider extends PopupWindow {
     /**
      * Popup window itself is as big as the window of the Activity.
      * The keyboard can then be calculated by extracting the popup view bottom
-     * from the activity_main window height.
+     * from the activity_light_main window height.
      */
     private void handleOnGlobalLayout() {
 

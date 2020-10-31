@@ -3,23 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.laodev.tictic">
 
-    <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.MANAGE_DOCUMENTS"
-        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.RECORD_VIDEO" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
-
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-feature
-        android:name="android.hardware.camera2.full"
-        android:required="false" />
+
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" tools:ignore="ProtectedPermissions" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera2.full" android:required="false" />
 
     <application
         android:name="com.laodev.tictic.SimpleClasses.TicTic"
@@ -55,16 +51,27 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent"
             tools:ignore="LockedOrientationActivity" />
+
         <activity
             android:name="com.laodev.tictic.Splash_A"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+<!--        <activity-->
+<!--            android:name="com.laodev.tictic.light.MainActivity"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/MaterialThemeNoTitle">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
         <activity
             android:name="com.laodev.tictic.Main_Menu.MainMenuActivity"
             android:screenOrientation="portrait"
